@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadshot.io</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #ff5722;
+        }
+
+        p {
+            color: #555;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Deadshot.io Replica</h1>
+    <p>This is a locally hosted version of the site.</p>
+    <p>
+        <a href="/about">Learn More</a> | 
+        <a href="/contact">Contact Us</a>
+    </p>
+    <script>
+        // JavaScript functionality
+        console.log("Deadshot.io replica loaded.");
+
+        // Example: Handle a click event on the links
+        const links = document.querySelectorAll("a");
+        links.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                alert(`You clicked on: ${e.target.textContent}`);
+            });
+        });
+    </script>
+</body>
+</html>
